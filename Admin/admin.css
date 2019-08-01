@@ -1,0 +1,437 @@
+  body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+/* Layout */
+
+#container {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+#main {
+  padding: 1.5em 1em 1.5em 1em;
+  max-width: 55em;
+  margin: 0 auto;
+  margin-left: calc(100% - 75%) !important;
+}
+
+#header {
+  padding: 1.5em;
+  margin: 0 0 1em 0;
+  background-color: #eee;
+}
+
+#footer {
+  padding: 1.5em;
+  margin: 2em 0 0 0;
+  background-color: #eee;
+
+}
+
+
+/* Menu Styles */
+
+.primary-nav {
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    
+}
+
+.navbar a{
+  font-size: 16px !important;
+  padding: 1em;
+  margin: 1em;
+}
+
+.hamburger {
+    border: none;
+    background: #fff;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 13px 0;
+    width: 50px;
+    height: 73px;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.hamburger:before {
+    content:"\2630"; /* hamburger icon */
+    display: block;
+  color: #000;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.openNav .hamburger:before {
+    content:"\2715"; /* close icon */
+    display: block;
+    color: #000;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.hamburger:hover:before {
+  color: #777;
+}
+
+.primary-nav .navbar li {
+    position: relative;
+}
+
+.navbar .icon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.navbar,
+.navbar a,
+.navbar a:visited {
+    color: #aaa;
+    text-decoration: none!important;
+    position: relative;
+}
+
+.navbar {
+  display: block;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar {
+    margin-bottom: 3em;
+}
+
+
+.navbar label {
+  margin-bottom: 0;
+  display: block;
+}
+
+.navbar label:hover {
+  cursor: pointer;
+}
+
+.navbar input[type="checkbox"] {
+  display: none;
+}
+
+input#menu[type="checkbox"] {
+  display: none;
+}
+
+.sub-menu-dropdown {
+    display: none;
+}
+
+.new-wrapper {
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 50px);
+}
+
+.navbar {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 40vh;
+  /*transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);*/
+    background-color: #071429;
+    z-index: 999;
+}
+
+.overflow-container {
+  position: relative;
+  height: 100vh !important;
+  /*height: calc(100vh - 73px)!important;*/
+  overflow-y: auto;
+  border-top: 73px solid #fff;
+  z-index: -1;
+  display:block;
+}
+
+.navbar span.admin {
+  position: absolute!important;
+  top: 11px;
+  left: 55px;
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000;
+  font-size: 21px;
+  padding: 10px;
+}
+
+.navbar span.admin{
+  font-weight: 400;
+}
+
+/* look and feel only, not needed for core menu*/
+
+@-webkit-keyframes grow {
+    
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+    
+}
+
+@keyframes grow {
+    
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1
+  }
+    
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+
+/* Responsive Typography */
+
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: #000;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+button{
+  border-radius: 0px;
+  margin-left: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1, h2 {
+    letter-spacing: -1px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  margin: 0 0 0.5em 0;
+  line-height: 1.1;
+}
+
+h1, .h1 {font-size: 1.8em;}
+
+h2, .h2 {font-size: 1.6em;}
+
+h3, .h3 {font-size: 1.4em;}
+
+h4, .h4 {font-size: 1.2em;}
+
+/*Small screen typography */
+
+@media screen and (max-width: 42em) {
+    .overflow-container,.navbar{
+      width: 25vh;
+      font-size: 12px !important;
+    }
+    .navbar a{
+       margin: 6px;
+       padding: 6px;
+    }
+
+    h1 { letter-spacing: -1px; }
+
+    h1, .h1 {font-size: 1.5em;}
+
+    p { font-size:0.75em; }
+
+    h4{
+      font-size: 16px;
+    }
+
+    td,th{
+      font-size: 14px;
+    }
+
+}
+
+/* Medium Screen Typography  */
+
+@media screen and (min-width: 42em) {
+
+    .overflow-container,.navbar{
+      width: 30vh;
+      font-size: 14px;
+    }
+
+    h1, .h1 { letter-spacing: -2px; }
+
+    h1, .h1 {font-size: 2.5em;}
+
+    p { font-size:0.8em; }
+
+    h4{
+      font-size: 18px;
+    }
+
+    td,th{
+      font-size: 16px;
+    }
+
+}
+
+
+/* Large Screen Typography  */
+
+@media screen and (min-width: 72em) {
+    .overflow-container,.navbar{
+      width: 40vh;
+    }
+
+    h1 { letter-spacing: -3px; }
+
+    h1, .h1 { margin-bottom: 0.35em; font-size: 3em; }
+
+    p { font-size:1.125em; }
+
+    h4{
+      font-size: 20px;
+    }
+
+    td,th{
+      font-size: 16px;
+    }
+
+}
+
+textarea{
+    margin: 10px 0px 0px 30px !important;
+    width: 100%;
+    font-size: 20px;
+}
+
+p{
+  margin: 30px  !important;
+}
+
+button[type="submit"],input[type="submit"]{
+  text-align: center;
+  width: 30%;
+  height: 5%;
+  background-color: #888;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 35%;
+  margin-right: 35%;
+  color: black;
+  font-weight: bold;
+}
+
+input[type="file"]{
+  text-align: center;
+  width: 30%;
+  height: 5%;
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+h1{
+  font-size: 45px !important;
+  text-align: center;
+}
+
+li{
+  padding: 1em;
+}
+
+.navbar a.active{
+  color: white;
+  font-weight: bold;
+}
+
+h4,hr{
+  margin: 15px;
+}
+

@@ -1,0 +1,79 @@
+body{
+    background-color: #eee;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+    margin: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+table{
+    margin: 30px;
+    text-align: justify;
+    table-layout: fixed;
+    border-collapse:collapse;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+th{
+    text-align: center;
+}
+
+td,th{
+    padding: 10px;
+}
+
+select{
+    width: 30%;
+    height: 5%;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+input[type='radio']{
+    margin-left: 25px;
+    padding: 10px;
+}
+
+label{
+    margin: 25px;
+    font-size: 15px;
+}
+
+p{
+    margin: 25px;
+    font-weight: bold;
+}
+
+button[type='submit']{
+    text-align: center;
+    width: 30%;
+    height: 5%;
+    background-color: #888;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: black;
+    font-weight: bold;
+}
+
+.box{
+    margin-top: 5%;
+    margin-left: 25%;            
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+}
+
+h1{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+}
