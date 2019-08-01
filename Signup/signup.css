@@ -1,0 +1,98 @@
+body{
+  background-image: url(../Image/sport-magic.jpg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: system-ui;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+}
+
+legend{
+  margin-top: 33%;
+  font-weight: bold;
+  color: black;
+}
+
+a{
+  margin-left: 23%;
+}
+
+form {
+  margin-left: 20%;
+  padding: 5px;
+  font-size: 20px;
+  max-height: 90%;
+  max-width: 100%;
+  height: 90%;
+  width: 75%;
+  border: 3px solid #f1f1f1;
+  background-color:#ffe9e0;
+  opacity: 0.85;
+  margin-block-end: 0em !important;
+}
+
+input[type="text"],[type="email"]{ 
+  width: 60%; 
+  background-color: transparent;
+  display: inline-block;
+  padding: 3px 3px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 70px;
+}
+input[type="text"],[type="password"],[type="email"]{ 
+  width: 60%; 
+  background-color: transparent;
+  display: inline-block;
+  padding: 3px 3px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 40px;
+}
+
+input[type="checkbox"],[type="radiobutton"]{
+  margin-left: 50px;
+}
+option,select{
+  width: 60%; 
+  background-color: transparent;
+  display: inline-block;
+  padding: 3px 3px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: rgba(7, 57, 80, 0.904);
+  color: white;
+  font-weight: 600;
+  padding: 11px 10px;
+  margin: 8px 0;
+  margin-left: 150px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 10px;
+}
+
+footer{
+    margin-top: 15px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+

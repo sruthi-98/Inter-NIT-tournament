@@ -1,0 +1,38 @@
+body{
+  opacity: 80;
+  
+}
+legend {
+  text-align: center;
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  weight: 20px;
+  
+  
+  letter-spacing: 2px;
+  font-stretch: expanded;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#row1{
+   margin: 150px;
+   border: 2px solid black;
+   margin-left: 200px;
+   margin-right: 100px;
+}
+p{
+   font-family: 'Marcellus SC', serif;
+  letter-spacing: 2px;
+  font-stretch: expanded;
+  font-size: 20px;
+}
+hr{
+  
+  
+  border-color: black !important;
+  
+  border-width: 1px;
+} 
+

@@ -1,0 +1,29 @@
+p.contact{
+    margin: 0vw 0vw 0vw 18vw !important;
+}
+
+img.sport{
+	border-radius: 50%;
+	border: 1px solid black;
+	width: 23vw;
+	height: 23vw;
+	padding: 10px;
+	margin: 10px;
+}
+
+a.hockey,a.handball{
+	width: 23vw;
+	height: 23vw;
+}
+
+hr,h1{
+	margin-left: 25vw !important;
+}
+
+p.sport{
+	margin-left: 25vw !important;
+}
+
+img#handball{
+	opacity: 0.9;
+}
