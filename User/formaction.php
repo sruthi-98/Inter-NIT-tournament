@@ -222,14 +222,14 @@
             $mail ->Host = "smtp.gmail.com";
             $mail ->Port = 465; // or 587
             $mail ->IsHTML(true);
-            $mail ->Username = "internitc19@gmail.com";//sender of mail
-            $mail ->Password = "nitc1234";//sender mail password
-            $mail ->SetFrom("internitc19@gmail.com");//sender of mail
+            $mail ->Username = "mail";//sender of mail
+            $mail ->Password = "password";//sender mail password
+            $mail ->SetFrom("mail");//sender of mail
 
             $mail ->Subject = "Team Sheet of ".$college_code.":".$sport.":".$gen." for Inter NIT Sports Tournament";
             $mail ->Body = "Hello Admin, <br><br>The attachment with this has the team details and player details given upon registration for your reference.<br><br>NIT Calicut";
             //write address of admin
-            $mail ->AddAddress("preethiannjacob1998@gmail.com");
+            $mail ->AddAddress("admin_mail");
         }
 
         //ob_start();

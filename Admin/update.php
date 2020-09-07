@@ -40,9 +40,9 @@ include('../Includes/redirect_check_code.php');
     $mail ->Host = "smtp.gmail.com";
     $mail ->Port = 465; // or 587
     $mail ->IsHTML(true);
-    $mail ->Username = "internitc19@gmail.com";//sender of mail
-    $mail ->Password = "nitc1234";//sender mail password
-    $mail ->SetFrom("internitc19@gmail.com");//sender of mail
+    $mail ->Username = "mail";//sender of mail
+    $mail ->Password = "password";//sender mail password
+    $mail ->SetFrom("mail");//sender of mail
 
     $mail ->Subject = "Status of the registration of ".$clg.":".$sport.":".$gender." for Inter NIT Sports Tournament";
     if($status=='Approved')
